@@ -1,0 +1,8 @@
+{%extends 'base.html'%}
+template_name = "notice_list"
+{%block content%}
+
+<h1>{{ notice.subject}}</h1>
+
+<p>{{notice.message}}</p>
+{%endblock%}

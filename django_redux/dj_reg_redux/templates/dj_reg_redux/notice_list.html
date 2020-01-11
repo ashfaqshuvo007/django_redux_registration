@@ -1,0 +1,10 @@
+{%extends 'base.html'%}
+template_name = "notice_detail"
+{%block content%}
+
+{% for n in notice_list %}
+<h3><a href="/redux/notice/{{n.id}}">{{ n.subject}}</a></h3>
+
+{% endfor %}
+
+{%endblock%}
