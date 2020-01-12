@@ -22,5 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('redux/', include('dj_reg_redux.urls')),
     path('', RedirectView.as_view(url="redux/")),
+    path('accounts/', include('registration.backends.default.urls')),
 
 ]

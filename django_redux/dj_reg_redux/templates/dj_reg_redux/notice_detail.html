@@ -3,6 +3,9 @@ template_name = "notice_list"
 {%block content%}
 
 <h1>{{ notice.subject}}</h1>
-
+<span>{{ notice.created_at }}</span>
 <p>{{notice.message}}</p>
+
+
+<a href="/redux/notice">Back</a>
 {%endblock%}

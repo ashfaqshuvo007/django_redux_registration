@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'registration',
     'dj_reg_redux'
 ]
 
@@ -119,3 +120,14 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# For registration through redux lib
+ACCOUNT_ACTIVATION_DAYS = 3
+
+EMAIL_HOST = 'smtp.mailtrap.io'
+EMAIL_HOST_USER = '6e08dc70e5c85d'
+EMAIL_HOST_PASSWORD = 'a763978dee0298'
+EMAIL_PORT = '2525'
+EMAIL_USE_TLS = True
+
+LOGIN_REDIRECT_URL = "/"
